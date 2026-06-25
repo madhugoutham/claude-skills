@@ -1,0 +1,31 @@
+{
+  "_comment": "Paste these sections into your ~/.claude/settings.json",
+
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "test -f /tmp/claude-steer.md && { cat /tmp/claude-steer.md; rm -f /tmp/claude-steer.md; } || true",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  },
+
+  "permissions": {
+    "allow": [
+      "Bash(git status)",
+      "Bash(git log:*)",
+      "Bash(git diff:*)",
+      "Bash(git branch:*)",
+      "Bash(git show:*)",
+      "Bash(gh pr view:*)",
+      "Bash(gh pr list:*)",
+      "Bash(gh issue view:*)"
+    ]
+  }
+}

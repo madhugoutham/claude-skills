@@ -1,0 +1,17 @@
+{
+  "name": "goutham-skills",
+  "owner": {
+    "name": "Madhu Goutham Reddy Ambati"
+  },
+  "metadata": {
+    "description": "Battle-tested engineering workflow skills for Claude Code — session handoff, checkpointing, principal task intake, adversarial diagnosis, multi-agent research, validation council, and more.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "goutham-skills",
+      "description": "16 slash commands and 5 subagents for engineering workflows: structured session handoffs, approach checkpointing, principal-level task intake with risk classification, adversarial bug diagnosis, multi-agent parallel research, validation council, deep learning with spaced repetition, and more.",
+      "source": "./"
+    }
+  ]
+}
