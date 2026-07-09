@@ -98,3 +98,4 @@ A typical `/research` call uses 4 Haiku agents returning ~1000 words each, costi
 ## License
 
 [MIT](LICENSE)
+Updated: 2026-07-08
